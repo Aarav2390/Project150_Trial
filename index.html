@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Train in the Desert</title>
+        <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="train_mtl" src="/trainModel/mtl/obj.mtl"></a-asset-item>
+                <a-asset-item id="train_obj" src="/trainModel/mtl/tinker.obj"></a-asset-item>
+                <a-asset-item id="train_gltf" src="/trainModel/gltf/train.glb"></a-asset-item>
+            </a-assets>
+            <a-plane position="0 1 5" rotation="90 0 0" width="30" height="30" src="desert.jpg"></a-plane>
+            <a-entity position="0 2 3.5" obj-model="obj:#train_obj;mtl:#train_mtl"></a-entity>
+        </a-scene>
+    </body>
+</html>
